@@ -1,0 +1,64 @@
+baseURL = "https://rraks.github.io/"
+languageCode = "en-us"
+title = "rraks"
+theme = "ezhil"
+
+# Enable syntax highlighting.
+pygmentsstyle = "solarized-dark"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginate = 10
+
+# Number of characters to show in summary.
+summaryLength = 20
+
+publishDir = "docs"
+
+[params]
+    # Blog subtitle which appears below blog title. Supports markdown.
+    subtitle = "Rakshit Ramesh"
+
+    # Content types which are included in home page recent posts list.
+    mainSections = ["posts"]
+
+    # Content types which are excludes Disqus comments.
+    disableDisqusTypes = ["page"]
+
+    # If social media links are enabled then enable this to fetch icons from CDN instead of hosted on your site.
+    featherIconsCDN = true
+
+    # Specify favicon (icons/i.png maps to static/icons/i.png). No favicon if not defined.
+    favicon = "icons/myicon.png"
+
+
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/me/"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/rraks"
+
+# Enable tags.
+[taxonomies]
+   tag = "tags"
