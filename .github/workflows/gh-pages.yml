@@ -1,33 +1,24 @@
-name: GHPage
-
+name: Push to GitHub Pages on push to master
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
-  pull_request:
+      - master
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Checkout master
+        uses: actions/checkout@v1
+        with: 
+          submodules: true
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.4.13
-        with:
-          hugo-version: 'latest'
-          # extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          personal_token: ${{ secrets.TOKEN }}
-          publish_dir: ./public
-          cname: github.com
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
+        env:
+          HUGO_VERSION: 0.84.0
+          TARGET_REPO: rraks/rraks.github.io
+          TARGET_BRANCH: gh-pages
+          HUGO_ARGS: '-D'
+          TOKEN: ${{ secrets.TOKEN }}
