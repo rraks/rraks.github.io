@@ -13,7 +13,7 @@ paginate = 10
 # Number of characters to show in summary.
 summaryLength = 20
 
-publishDir = "public"
+publishDir = "docs"
 
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
