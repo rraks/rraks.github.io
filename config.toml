@@ -13,7 +13,7 @@ paginate = 10
 # Number of characters to show in summary.
 summaryLength = 20
 
-publishDir = "docs"
+publishDir = "public"
 
 [params]
     # Blog subtitle which appears below blog title. Supports markdown.
@@ -30,6 +30,8 @@ publishDir = "docs"
 
     # Specify favicon (icons/i.png maps to static/icons/i.png). No favicon if not defined.
     favicon = "icons/myicon.png"
+
+    custom_css = ["css/quotes.css"]
 
 
 

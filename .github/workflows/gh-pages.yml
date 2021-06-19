@@ -1,34 +1,22 @@
-name: github pages
-
+name: GHPage
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
-  pull_request:
-    branches:
-      - gh-pages
+      - master
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Checkout master
+        uses: actions/checkout@v1
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.4.13
-        with:
-          hugo-version: 'latest'
-          # extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
+        env:
+          HUGO_VERSION: 0.83.1
+          TARGET_REPO: rraks/rraks.github.io
+          TARGET_BRANCH: master
+          TOKEN: ${{ secrets.TOKEN }}
+          CNAME: rraks.github.io
