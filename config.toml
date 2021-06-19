@@ -62,3 +62,4 @@ url = "https://github.com/rraks"
 # Enable tags.
 [taxonomies]
    tag = "tags"
+   category = "categories"
