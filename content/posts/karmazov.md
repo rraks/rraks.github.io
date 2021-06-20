@@ -1,5 +1,5 @@
 ---
-title: "Review: The Brothers Karamazov"
+title: "Review: The Brothers Karamazov by Fyodor Dostoyevsky"
 date: 2021-06-19T10:14:42+05:30
 tags: [book-review]
 ---
