@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rraks</title>
+    <link>https://rraks.github.io/</link>
+    <description>Recent content on rraks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jun 2021 10:46:53 +0530</lastBuildDate><atom:link href="https://rraks.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Review: Guards! Guards! by Terry Pratchet</title>
+      <link>https://rraks.github.io/posts/guards/</link>
+      <pubDate>Sun, 20 Jun 2021 10:46:53 +0530</pubDate>
+      
+      <guid>https://rraks.github.io/posts/guards/</guid>
+      <description>They may be called the Palace Guard, the City Guard, or the Patrol. Whatever the name, their purpose in any work of heroic fantasy is identical: it is, round about Chapter Three (or ten minutes into the film) to rush into the room, attack the hero one at a time, and be slaughtered.</description>
+    </item>
+    
+    <item>
+      <title>Review: The Left Hand Of Darkness by Ursula K Le Guin</title>
+      <link>https://rraks.github.io/posts/lhod/</link>
+      <pubDate>Sat, 19 Jun 2021 19:15:30 +0530</pubDate>
+      
+      <guid>https://rraks.github.io/posts/lhod/</guid>
+      <description>The Left Hand of Darkness is a masterpiece in Science Fiction. Ursula conducts a thought experiment with her readers, as described in her own words -</description>
+    </item>
+    
+    <item>
+      <title>Review: The Brothers Karamazov by Fyodor Dostoyevsky</title>
+      <link>https://rraks.github.io/posts/karmazov/</link>
+      <pubDate>Sat, 19 Jun 2021 10:14:42 +0530</pubDate>
+      
+      <guid>https://rraks.github.io/posts/karmazov/</guid>
+      <description>To be of a Karamazovian nature is to be able to contemplate both abysses at once, that of the loftiest and most noble abyss above us and that of the one beneath us, the lowest and foulest of human degradation and thought.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rraks.github.io/about/me/</link>
+      <pubDate>Sat, 12 Jun 2021 17:20:58 +0530</pubDate>
+      
+      <guid>https://rraks.github.io/about/me/</guid>
+      <description>I&amp;rsquo;m Rakshit Ramesh, a vagabond by technology, a stoic by philosophy and most of all a cripple by procrastination.
+This blog is my attempt at recording my influenced thoughts as I am inextricably drawn through the web of intermingling causality.</description>
+    </item>
+    
+  </channel>
+</rss>
